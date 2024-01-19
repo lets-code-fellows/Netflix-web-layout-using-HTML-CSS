@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+}
+nav {
+  display: flex;
+  height: auto;
+  width: 75vw;
+  justify-content: space-between;
+  align-items: start;
+  margin: auto;
+  margin-top: 25px;
+}
+.logo {
+  width: 150px;
+  z-index: 100;
+}
+.select {
+  padding-left: 3px;
+  display: flex;
+  align-items: center;
+  width: 102px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 0 10px white;
+  background: transparent;
+}
+.select > svg {
+  height: 30px;
+  width: 20px;
+}
+select {
+  border-style: none;
+  color: aliceblue;
+  height: 45px;
+  width: 75px;
+  background: transparent;
+}
+.sign {
+  display: flex;
+  border-radius: 4px;
+  background-color: rgb(193, 17, 25);
+  height: 35px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.sign > a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.drop-sign {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  z-index: 100;
+}
+.background {
+  opacity: 0.35;
+  background-color: black;
+}
+.background > div {
+  position: absolute;
+  top: 0;
+  background-image: url("back.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: 60% 60%;
+}
+.content {  
+  position: relative;
+  top:0;
+  width: 80vw;
+  margin: auto;
+  margin-top: 30vh;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  z-index: 100;
+}
+.font {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.5vh;
+}
+
+.input {
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+    height: 10vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+input {
+  border-radius: 3px;
+  height: 55px ;
+  width: 400px;
+  font-size: 18px;
+  color: aliceblue ;
+  box-shadow: 0 0 4px whitesmoke;
+  background: transparent;
+}
+.input > a{
+    display: flex;
+    height: 58px;
+    width: 200px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 27px;
+    margin-left: 1.5vw;
+    background-color: rgb(222, 11, 22);
+    color: white;
+    text-decoration: none;
+    justify-content: center;  
+    align-items: center;
+}
+@media only screen and (max-width: 769px) {
+  .logo {
+    width: 100px;
+  }
+  .content {
+    text-align: center;
+    font-size: 20px;
+    gap: 2vh;
+  }
+.font{
+  gap: 5vh;
+  text-align: center;
+}
+.background > div {
+  position: absolute;
+  top: 0;
+  background-image: url("back.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: 60% 60%;
+}
+}
+@media only screen and (max-width: 425px) {
+  nav {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  input{
+    width:300px;
+  }
+  .input > a{
+    margin-top:10px ;
+    font-size: 18px;
+    height: 40px;
+    width: 140px;
+  }
+  
+}
